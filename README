@@ -1,0 +1,31 @@
+BasicDjango by Casey Falk [2014]
+
+These files are meant to provide a basic example of using the Django Web Framework
+ for one who has experience in Python, but no experience in Django itself.
+
+# # # # # # # # # # # # INSTALL # # # # # # # # # # # #
+--It is assumed that Django[1.5+] is already an installed, but that is all.
+--If you need to install it, "sudo pip install Django" should be sufficient.
+  -- https://docs.djangoproject.com/en/dev/topics/install/#installing-the-development-version-without-pip
+
+
+# # # # # # # # # # # # BASIC COMMANDS # # # # # # # # # # # #
+-- Django comes with a rudimentary test-server for developing your app. It is run
+    through the "manage.py" file in the app directory: "python manage.py runserver"
+-- A database* can be set up with: "python manage.py syncdb"
+  -- https://docs.djangoproject.com/en/dev/ref/databases/
+  (*Note that Django can handle many database backends -- the default is SQLite.) 
+
+# # # # # # # # # # # # THE PHILOSOPHY # # # # # # # # # # # #
+-- Django follows the DRY Principle (Don't Repeat Yourself) -- so you should too.
+-- Django is meant to allow rapid prototyping of apps in a clean way.
+-- Django is well-documented and far more expansive than is covered in these files.
+   -- Thus, if you wish Django could do something: check. It probably can.
+-- Django is team-oriented; templating, view-designing, model-constructing, etc.
+    should all be seen as different steps in a larger process:
+   -- Templates should be logic-minimal, clean, and simple.
+   -- Views should be elegant, logic-driven, and make things easy for the Templates.
+   -- Models should be general, understandable, and efficient.
+   -- Each aspect should be treated as a _separate part_ of a larger engine.
+
+

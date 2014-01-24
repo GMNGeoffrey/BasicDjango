@@ -9,7 +9,12 @@ urlpatterns = patterns('',
      #Django allows us to URLs to functions using Regular Expressions.
      url(r'^$', basic_view),
      url(r'^basic$', basic_view),
+     #It is good practice to allow the trailing slash in URLs.
+     url(r'^basic/$', basic_view),
+     #However, with RegEx the top two URLs can be simplified to:
+     url(r'^basic/?$', basic_view),
 
+     #Notice that we can have multiple views point to the same function.
      url(r'^view_with_vars$', view_with_vars),
 
      #You can also pass variables through the URL.
