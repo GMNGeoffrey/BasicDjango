@@ -1,0 +1,14 @@
+/* The following is a basic CSS file. */
+body {
+ background-color:orange;
+}
+
+.myClass {
+ background-color:red;
+}
+
+#myID {
+ background-color:cyan;
+}
+
+/* Disclaimer: Don't take any of this as stylistic advice. It's ugly. */

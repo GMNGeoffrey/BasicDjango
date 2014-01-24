@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>My Django Page!</title>
+
+<!-- We can grab a static file easily by using the STATIC_URL tag. -->
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}mystyle.css">
+
+</head>
+
+<body>
+This basic page is brought to you by view_with_vars! <br/>
+
+<!-- In Django, the "." can: call functions, index, get values, and more. -->
+This is value of the key "my_template_var": {{ myDict.my_template_var }} <br/>
+
+<!-- The templating system allows us to abstract out "blocks" of HTML! -->
+<!-- In doing this, "my_menu.html" is passed the same parameters and request -->
+{% include "my_menu.html" %}
+
+Here are some basic styles as applied by our external style sheet.
+<div class="myClass">Here is ma' class.</div>
+<div id="myID">And this has an ID</div>
+
+</body>
+</html>
+
